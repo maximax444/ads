@@ -1,0 +1,323 @@
+.main
+ background: url('../img/main-bg.jpg') center no-repeat
+ background-size: cover
+ &-cont
+  padding-top: 77px
+  padding-bottom: 230px
+  color: #FFFFFF
+ &-title
+  margin-top: 0
+  font-size: 50px
+  line-height: 70px
+  letter-spacing: 0.065em
+  text-transform: uppercase
+  margin-bottom: 30px
+  max-width: 570px
+ &-subtitle
+  font-size: 20px
+  line-height: 32px
+  margin-bottom: 64px
+  max-width: 495px
+  span
+   font-weight: 600
+ &-bottom
+  display: flex
+  align-items: center
+ &-btn
+  margin-right: 25px
+  width: 214px
+  height: 78px
+  &-o
+   width: 254px
+   height: 78px
+ &-features
+  margin-top: -113px
+  padding-bottom: 48px
+  &-wrap
+   display: flex
+   justify-content: space-between
+  &-block
+   background: #FFFFFF
+   box-shadow: 0px 6px 40px rgba(0, 0, 0, 0.1)
+   border-radius: 10px
+   width: 270px
+   height: 178px
+   padding: 40px
+  &-text
+   margin-top: 14px
+   font-weight: 500
+   font-size: 17px
+   line-height: 26px
+   color: #000000
+ &-brands
+  overflow: hidden
+  padding-bottom: 30px
+  border-bottom: 1px solid rgba(#000000, .1)
+  &-title
+   margin-bottom: 20px
+   font-weight: 600
+   font-size: 18px
+   line-height: 21px
+  &-main
+   width: 2000px
+   display: flex
+   align-items: center
+   img
+    margin-right: 50px
+.header
+ height: 163px
+ color: #ffffff
+ &-wrap
+  padding: 0 70px
+  height: 100%
+  display: flex
+  justify-content: space-between
+  align-items: center
+ &-logo
+  text-decoration: none
+  display: flex
+  align-items: center
+  &-text
+   font-size: 15px
+   line-height: 20px
+   color: #FFFFFF
+   max-width: 155px
+   margin-left: 22px
+ &-menu
+  width: 805px
+  list-style-type: none
+  margin: 0
+  padding: 0
+  display: flex
+  justify-content: space-between
+  align-items: center
+  a
+   font-size: 14px
+   line-height: 136%
+   letter-spacing: 0.15em
+   text-transform: uppercase
+   color: #FFFFFF
+   transition: all 0.3s
+   &:hover
+    opacity: 0.8
+ &-contacts
+  width: 255px
+  &-top
+   font-size: 12px
+   line-height: 12px
+   margin-bottom: 8px
+  &-phone
+   color: #fff
+   display: block
+   font-weight: 600
+   font-size: 24px
+   line-height: 24px
+   text-transform: uppercase
+ &-last
+  border: 1px solid rgba(#FFFFFF, .3)
+  width: 245px
+  height: 59px
+  display: flex
+  border-radius: 4px
+  &-main
+   display: flex
+   justify-content: center
+   align-items: center
+   color: #fff
+   height: 100%
+   width: calc( 100% - 80px )
+   font-size: 14px
+   line-height: 12px
+  &-drop
+   font-size: 14px
+   line-height: 12px
+   display: flex
+   justify-content: center
+   align-items: center
+   color: #fff
+   height: 100%
+   width: 80px
+   position: relative
+   img
+    margin-left: 4px
+    margin-top: 2px
+   &::before
+    content: ""
+    height: 35px
+    width: 1px
+    background-color: rgba(#FFFFFF, .3)
+    position: absolute
+    left: 0
+    top: 12px
+@media(max-width: 1770px)
+ .header-menu
+  width: 610px
+@media(max-width: 1570px)
+ .header
+  &-menu
+   width: 520px
+   a
+    font-size: 12px
+  &-phone
+   width: 150px
+  &-contacts
+   width: 155px
+   &-phone
+    font-size: 18px
+@media(max-width: 1380px)
+ .header-wrap
+  padding: 0 25px
+@media(max-width: 1300px)
+ .header
+  &-logo
+   &-text
+    font-size: 12px
+    max-width: 125px
+    margin-left: 10px
+  &-last
+   width: 200px
+   &-main
+    font-size: 13px
+    width: calc(100% - 60px)
+   &-drop
+    width: 60px
+@media(max-width: 1199px)
+ .header
+  &-last
+   display: none
+ .main
+  &-features
+   &-block
+    max-width: 24%
+@media(max-width: 991px)
+ .header
+  &-wrap
+   max-width: 700px
+   margin: 0 auto
+  &-menu
+   display: none
+  &-mob
+   display: block
+   width: 30px
+   height: 30px
+   position: relative
+   span
+    width: 100%
+    position: absolute
+    left: 0
+    top: 14px
+    height: 2px
+    background-color: #fff
+    &::before
+     content: ""
+     width: 100%
+     position: absolute
+     left: 0
+     top: -12px
+     height: 2px
+     background-color: #fff
+    &::after
+     content: ""
+     width: 100%
+     position: absolute
+     left: 0
+     bottom: -12px
+     height: 2px
+     background-color: #fff
+ .main
+  &-features
+   &-block
+    max-width: 24%
+    padding: 20px 15px
+@media(max-width: 767px)
+ .main
+  &-features
+   &-wrap
+    flex-wrap: wrap
+   &-block
+    margin-bottom: 15px
+    max-width: 49%
+@media(max-width: 575px)
+ .header
+  height: auto
+  &-wrap
+   padding: 15px 10px
+  &-mob
+   width: 20px
+   height: 20px
+   span
+    top: 8px
+    &::before
+     top: -8px
+    &::after
+     bottom: -8px
+  &-search
+   &-icon
+    width: 20px
+    img
+     max-width: 100%
+  &-logo
+   display: block
+   margin-right: 10px
+   &-text
+    display: block
+    margin-left: 5px
+    font-size: 10px
+    line-height: 12px
+    max-width: 105px
+    margin-left: 0
+   img
+    max-width: 70px
+    display: block
+    margin-bottom: 5px
+  &-contacts
+   width: auto
+   &-top
+    font-size: 10px
+    margin-bottom: 5px
+   &-phone
+    font-size: 14px
+    line-height: normal
+ .main
+  &-brands
+   &-main
+    max-width: 100%
+    flex-wrap: wrap
+    justify-content: center
+    img
+     margin: 0 10px
+     margin-bottom: 10px
+   &-title
+    font-size: 18px
+  &-features
+   margin-top: -60px
+   padding-bottom: 20px
+   &-block
+    padding: 25px
+    max-width: 100%
+    width: 290px
+    margin: 0 auto
+    margin-bottom: 15px
+    height: auto
+  &-cont
+   padding-top: 40px
+   padding-bottom: 100px
+  &-title
+   font-size: 26px
+   line-height: normal
+   margin-bottom: 25px
+  &-subtitle
+   line-height: normal
+   font-size: 14px
+   padding-right: 20px
+   margin-bottom: 20px
+  &-bottom
+   align-items: center
+  &-btn
+   width: 120px
+   font-size: 12px
+   height: 45px
+   &-o
+    width: 150px
+    font-size: 12px
+    height: 45px
